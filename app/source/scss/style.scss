@@ -6,3 +6,12 @@
 
 /* 以下にスタイルを記述
 ************************* */
+
+.contents {
+    background-color: $base-background-color;
+}
+
+.content-inner {
+    width: 770px;
+    margin: 0 auto;
+}
