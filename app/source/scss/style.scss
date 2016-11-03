@@ -8,10 +8,20 @@
 ************************* */
 
 .contents {
+    
+}
+
+.top-inner {
+    width: 100%;
     background-color: $base-background-color;
+
+    section:nth-child(2n){
+        background-color: $other-background-color;
+    }
 }
 
 .content-inner {
+    padding: 60px 0;
     width: 960px;
     margin: 0 auto;
 }
@@ -20,6 +30,11 @@
     font-size: 48px;
     font-family: COCOGOOSE;
     text-align: center;
+    margin-bottom: 70px;
+}
+
+p {
+    line-height: $line-height;
 }
 
 /* top-mainvisual
@@ -28,16 +43,340 @@
 .top-mainvisual {
     margin: 0 auto;
     width: 100%;
+    height: 880px;
     position: relative;
 
     .img-mainvisual {
         width: 100%;
+        position: absolute;
+        top: -100px;
     }
 
     .img-title01 {
         width: 40%;
         position: absolute;
-        top: 240px;
+        top: 260px;
         left: 50px;
     }
 }
+
+/* top-webd1
+************************* */
+.top-webd1-title {
+    margin-bottom: 45px;
+    font-family: COCOGOOSE;
+    font-size: 2.4rem;
+    letter-spacing: 0.08rem;
+
+    b {
+        font-weight: bold;
+    }
+}
+
+.top-webd1-explanation {
+    line-height: 1.8;
+}
+
+
+/* top- about
+************************* */
+.top-about {
+    padding-bottom: 180px;
+    font-family:  "Futura Koyu", "Futura-Koyu", Futura Koyu, Futura, "Futura";
+    .about-list {
+    }
+    .about-item {
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        margin-right: 60px;
+        background-color: #000;
+        float: left;
+
+         &:last-child {
+            margin-right: 0;
+         }
+        &-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 60px;
+            margin-bottom: 40px;
+        }
+
+        .about-time {
+            position: relative;
+            text-align: center;
+            display: block;
+            font-weight: bold;
+            height: 104px;
+            .about-time-month {
+                font-size: 1.8rem;
+                font-weight: bold;
+                display: block;
+                position: absolute;
+                left: 30px;
+            }
+
+            .about-time-date {
+                font-size: 6.5rem;
+                display: block;
+                position: absolute;
+                left: 100px;
+            }
+        }
+         .item-number {
+            font-size: 6.5rem;
+            font-weight: bold;
+            text-align: center;
+            display: block;
+            margin-left: 15px;
+         }
+
+         .item-unit {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-left: 10px;
+         }
+
+         .about-item-explanation {
+            padding-top: 100px;
+            width: 240px;
+            margin: 0 auto;
+            letter-spacing: 0.07rem;
+         }
+    }
+}
+
+/* top-theme
+************************* */
+@keyframes vertical {
+    0% { transform:translateY(-10px); }
+  100% { transform:translateY(  0px); }
+}
+
+.top-theme {
+    .top-theme-question {
+        color:$red;
+        font-size: 288px;
+        text-align: center;
+        font-family: COCOGOOSE;
+        display: block;
+        animation: vertical 1s ease-in-out infinite alternate;
+    }
+    p {
+        text-align: center;
+        color: $red;
+    }
+
+}
+
+/* top-judge
+************************* */
+.top-judge {
+
+    ul {
+        margin: 30px 0;
+    }
+    li {
+        width: 440px;
+        margin-right: 80px;
+        margin-bottom: 80px;
+        float: left;
+
+        .judge-img-frame {
+            width: 200px;
+            float:left;
+
+            img {
+                width: 200px;
+            }
+        }
+
+        .judge-text {
+            width: 210px;
+            float: right;
+            margin-left: 30px;
+
+        }
+
+        .judge-name {
+            font-size: 1.6rem;
+            letter-spacing: 0.08rem;
+            margin: 20px 0 20px 0;
+            display: block;
+        }
+
+        .judge-postion {
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 30px;
+        }
+
+        .judge-explanation {
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        &:nth-child(2n){
+            margin-right: 0;
+        }
+    }
+}
+
+
+/* top-prize
+************************* */
+.top-prize {
+    padding: 20px 0;
+    .prize-detail {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        padding-left: 10px;
+
+    }
+}
+
+
+/* top-schedule&access
+************************* */
+.top-scheduleaccess{
+    padding: 20px 0;
+    .schedule-detail {
+        float: left;
+        width: 400px;
+        border-left: 8px solid $red;
+        padding-left: 20px;
+
+        .schedule-time {
+            display: block;
+            margin-bottom: 20px;
+        }
+        .schedule-content {
+            display: block;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            letter-spacing: 0.06rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .access-map {
+        float: right;
+
+        .map-frame{
+            width: 500px;
+            height:350px;
+            border: 8px solid $red;
+        }
+
+        img {
+            width: 25px;
+            margin-top: 20px;
+            margin-right: 15px;
+            display: inline-block;
+        }
+
+        .access-address {
+            position: relative;
+            top: -5px;
+            font-weight: bold;
+            padding-bottom: 15px;
+            border-bottom: 5px solid $red;
+            display: inline-block;
+            font-size: 1.3rem;
+            letter-spacing: 0.08rem;
+            text-align: left;
+            padding-left: 55px;
+            margin-left: -50px;
+            width: 461px;
+        }
+    }
+}
+
+/* top-aside
+************************* */
+
+.top-aside {
+    background-image:
+    url(../images/shadow1.png), url(../images/shadow2.png),
+    url(../images/img-lifeistech-office.jpg);
+    background-size:  100%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position:
+    top center,
+    bottom center,
+    0 -150px;
+
+    img {
+        width: 1000px;
+        margin-top: -170px;
+    }
+}
+
+/* top-entry
+************************* */
+.top-entry {
+
+    .entry-text {
+        font-family: COCOGOOSE;
+        font-size: 5rem;
+        color: #000;
+        text-align: center;
+        display: block;
+        transition: all .6s ease-out;
+        padding: 50px 0;
+        background-color: $red;
+        text-decoration: none;
+
+        &:hover {
+            color: $red;
+            background-color: #000;
+            display: block;
+        }
+    }
+}
+
+/* footer
+************************* */
+
+.footer {
+    text-align: center;
+    padding: 50px 0;
+
+    .footer-organize{
+        font-family: COCOGOOSE;
+        font-size: 1.4rem;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .footer-logo-webd {
+        margin-right: 40px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .footer-logo-lit{
+        position: relative;
+        top: -20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
