@@ -4,7 +4,7 @@
 @import 'base';
 @import 'clearfix';
 
-/* 以下にスタイルを記述
+/* 共通
 ************************* */
 
 .contents {
@@ -12,6 +12,32 @@
 }
 
 .content-inner {
-    width: 770px;
+    width: 960px;
     margin: 0 auto;
+}
+
+.top-title {
+    font-size: 48px;
+    font-family: COCOGOOSE;
+    text-align: center;
+}
+
+/* top-mainvisual
+************************* */
+
+.top-mainvisual {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+
+    .img-mainvisual {
+        width: 100%;
+    }
+
+    .img-title01 {
+        width: 40%;
+        position: absolute;
+        top: 240px;
+        left: 50px;
+    }
 }
