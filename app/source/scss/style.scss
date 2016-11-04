@@ -8,7 +8,7 @@
 ************************* */
 
 .contents {
-    
+
 }
 
 .top-inner {
@@ -75,6 +75,8 @@ p {
 
 .top-webd1-explanation {
     line-height: 1.8;
+    font-weight: 500;
+    letter-spacing: 0.03em;
 }
 
 
@@ -143,7 +145,7 @@ p {
             padding-top: 100px;
             width: 240px;
             margin: 0 auto;
-            letter-spacing: 0.07rem;
+            font-size: 93%;
          }
     }
 }
@@ -167,6 +169,7 @@ p {
     p {
         text-align: center;
         color: $red;
+        font-weight: 600;
     }
 
 }
@@ -205,6 +208,7 @@ p {
             letter-spacing: 0.08rem;
             margin: 20px 0 20px 0;
             display: block;
+            font-weight: 600;
         }
 
         .judge-postion {
@@ -317,6 +321,7 @@ p {
     img {
         width: 1000px;
         margin-top: -170px;
+        margin-left: -50px;
     }
 }
 
@@ -334,11 +339,13 @@ p {
         padding: 50px 0;
         background-color: $red;
         text-decoration: none;
+        border: 8px solid $red;
 
         &:hover {
             color: $red;
             background-color: #000;
             display: block;
+            border: 8px solid $red;
         }
     }
 }
@@ -358,14 +365,16 @@ p {
     }
 
     .footer-logo-webd {
+        width: 150px;
         margin-right: 40px;
         margin-top: 20px;
         margin-left: 20px;
     }
 
     .footer-logo-lit{
+        width: 240px;
         position: relative;
-        top: -20px;
+        top: -15px;
     }
 }
 
