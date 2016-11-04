@@ -74,8 +74,8 @@ var copyPaths = [
 		from: './app/source/js/**/*',
 		to: './app/public/js'
 	}, {
-		from: './app/source/plugins/**/*',
-		to: './app/public/plugins'
+		from: './app/source/lib/**/*',
+		to: './app/public/lib'
 	}
 ];
 
