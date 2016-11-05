@@ -38,17 +38,17 @@ gulp.task('sass', function() {
 });
 
 
-/* Combine MediaQuery
-****************************** */
-var cmq = require('gulp-combine-media-queries');
-gulp.task('cmq', function() {
-	gulp.src('./app/public/css/*.css')
-		.pipe(plumber())
-		.pipe(cmq({
-			log: true
-		}))
-		.pipe(gulp.dest('./app/public/css'));
-});
+// /* Combine MediaQuery
+// ****************************** */
+// var cmq = require('gulp-combine-media-queries');
+// gulp.task('cmq', function() {
+// 	gulp.src('./app/public/css/*.css')
+// 		.pipe(plumber())
+// 		.pipe(cmq({
+// 			log: true
+// 		}))
+// 		.pipe(gulp.dest('./app/public/css'));
+// });
 
 /* Ejs
 ****************************** */
