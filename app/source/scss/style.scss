@@ -246,12 +246,139 @@ p {
 ************************* */
 .top-prize {
     padding: 20px 0;
+    text-align: center;
+    margin-bottom: 50px;
+
     .prize-detail {
+        font-size: $base-font-size;
+        font-weight: bold;
+        text-align:  right;
+        color: $red;
+        margin-bottom: 100px;
+    }
+
+    .prize-top-title {
+        font-size: 3rem;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 55px;
+    }
+
+    .prize-top-detail{
+        color: #f8991d;
+        margin-top: 30px;
+        display: block;
         font-size: 1.5rem;
         font-weight: bold;
-        text-align: center;
-        padding-left: 10px;
+    }
 
+    .prize-top-img {
+        width: 375px;
+
+        @media (max-width: 768px) {
+            width: 90%;
+        }
+    }
+
+    .prize-list {
+        margin: 130px 0 60px 0;
+
+        @media (max-width: 768px) {
+            margin-bottom: 0;
+        }
+        .prize-item{
+            float:left;
+            margin-right: 60px;
+
+            @media (max-width: 768px) {
+                float: none;
+                margin: 0 auto;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+            > span {
+                color: #fff;
+                font-size: 1.6rem;
+                display: block;
+                margin-bottom: 50px;
+                font-weight: bold;
+
+                @media (max-width: 768px) {
+                    margin-bottom: 30px;
+                }
+            }
+            img {
+                width: 280px;
+
+                @media (max-width: 768px) {
+                    width: 80%;
+                    margin-bottom: 80px;
+                }
+            }
+        }
+    }
+
+
+    .prize-standard{
+        border-left: 8px solid $red;
+        padding-left: 20px;
+        text-align: left;
+
+        .prize-standard-title {
+            color: $red;
+            font-size: 1.5rem;
+            margin-bottom: 55px;
+            padding-top: 5px;
+
+            @media (max-width: 768px) {
+                margin-bottom: 40px;
+            }
+        }
+
+        .prize-standard-list {
+            font-weight: bold;
+            color: #fff;
+            padding-bottom: 15px;
+
+            .prize-standard-item {
+                margin-bottom: 65px;
+                height: 40px;
+
+                // @media (max-width: 768px) {
+                //     margin-bottom: 40px;
+                // }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                > span {
+                    font-family: 'Futura Koyu';
+                    display: table-cell;
+                    padding-right: 45px;
+                    font-size: 2.7rem;
+
+                    @media (max-width: 768px) {
+                        font-size: 2rem;
+                        padding-right: 30px;
+                    }
+                }
+
+                > p{
+                    font-size: 1.3rem;
+                    display: table-cell;
+                    letter-spacing: 0.06rem;
+                    vertical-align: middle;
+
+                    @media (max-width: 768px) {
+                        font-size: $base-font-size;
+                        line-height: $line-height;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -670,7 +797,7 @@ p {
     .top-prize {
         padding: 20px 0;
         .prize-detail {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: bold;
             text-align: center;
             padding-left: 10px;
